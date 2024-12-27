@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyCode</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="{% static 'media/icon_mini.png' %}" type="image/x-icon">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'practica_app/css/courses.css' %}">{% endblock %}
+{% block content %}
+    <div class="courses-container">
+        {% for course_info in courses_info %}
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="{% static course_info.img %}" alt="фото курса">
+                    <div class="course-overlay">
+                        <h3>{{ course_info.name }}</h3>
+                        <p>{{ course_info.time }}</p>
+                        <p class="price">{{ course_info.price }}</p>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <p>{{ course_info.details }}</p>
+                    <a href="#" class="btn">Записаться</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

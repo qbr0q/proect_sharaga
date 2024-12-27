@@ -1,0 +1,37 @@
+header{
+    height: 130px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 60px;
+    font-size: 20px;
+}
+
+.left_header{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.lists{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc_btns{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.main_logo{
+    height: 70px;
+}
+
+hr{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 80px;
+}

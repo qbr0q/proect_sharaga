@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'practica_app/css/swiper.css' %}">{% endblock %}
+{% block js %}
+    <script src="{% static 'practica_app/js/swiper.js' %}"></script>
+{% endblock %}
+{% block content %}
+        <div class="slider">
+            <div class="slides">
+                {% for lps_info in lps_info %}
+                    <div class="slide">
+                        <img src="{% static lps_info.img_of_lp %}" alt="image_of_lp">
+                        <span class="text">
+                            <h2>{{ lps_info.lp }}</h2>
+                            <p class="details">{{ lps_info.details }}</p>
+                        </span>
+                    </div>
+                {% endfor %}
+            </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+{% endblock %}

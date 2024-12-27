@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'practica_app/css/header.css' %}">{% endblock %}
+{% block content %}
+    <header>
+        <div class="left_header">
+            <img class="main_logo" src="{% static 'media/logo_main.png' %}">
+            <div class="lists">
+                <span>Курсы</span>
+                <span>Категории</span>
+                <span>О PyCode</span>
+            </div>
+        </div>
+
+        <div class="acc_btns">
+            <span>Войти</span>
+            <span>Регистрация</span>
+        </div>
+    </header>
+    <hr>
+{% endblock %}

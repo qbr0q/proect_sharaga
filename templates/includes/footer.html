@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'practica_app/css/footer.css' %}">{% endblock %}
+{% block content %}
+<footer class="footer">
+    <h3>PyCode</h3>
+    <p>Онлайн-курсы, которые вдохновляют и обучают</p>
+
+    <div class="footer-links">
+        <a href="#">О нас</a>
+        <a href="#">Курсы</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Блог</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">YouTube</a>
+    </div>
+
+    <div class="footer-bottom">
+        © 2024 PyCode. Все права защищены.<br>
+        Сделано с ❤️ и ☕ в мире кода.
+    </div>
+</footer>
+{% endblock %}
